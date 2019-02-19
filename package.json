@@ -51,7 +51,6 @@
 	},
 	"dependencies": {
 		"@types/needle": "^2.0.4",
-		"needle": "^2.2.4",
-		"vsce": "^1.57.1"
+		"needle": "^2.2.4"
 	}
 }
