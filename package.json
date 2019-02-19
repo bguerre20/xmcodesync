@@ -1,0 +1,57 @@
+{
+	"name": "xmcodesync",
+	"publisher": "BG",
+	"displayName": "xmCodeSync",
+	"description": "An extension to sync your shared libraries down to vscode and back for quick edits in a more developed IDE.",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:xmcodesync.xmpull",
+		"onCommand:xmcodesync.xmpush",
+		"onCommand:xmcodesync.xmsetup"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "xmcodesync.xmpull",
+				"title": "Pull",
+				"category": "xMatters"
+			},
+			{
+				"command": "xmcodesync.xmpush",
+				"title": "Push",
+				"category": "xMatters"
+			},
+			{
+				"command": "xmcodesync.xmsetup",
+				"title": "Setup",
+				"category": "xMatters"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.1.4",
+		"vscode": "^1.1.25",
+		"tslint": "^5.8.0",
+		"@types/node": "^8.10.25",
+		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"@types/needle": "^2.0.4",
+		"needle": "^2.2.4",
+		"vsce": "^1.57.1"
+	}
+}
