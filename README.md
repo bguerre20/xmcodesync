@@ -1,65 +1,52 @@
 # xmcodesync README
 
-This is the README for your extension "xmcodesync". After writing up a brief description, we recommend including the following sections.
+- This is xmatters code sync! This tool is used to push and pull script to an xmatters cloud instance.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Configure which xmatters instance to sync with.
+    ![](https://i.imgur.com/PoSy67z.gif)
 
-For example if there is an image subfolder under your extension project workspace:
+- Pull script
+    ![](https://i.imgur.com/KN6AC09.gif)
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- Push script
+    ![](https://i.imgur.com/elhPvlr.gif)
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- An existins xmatters instance and account with sufficient privelages to do REST API calls on the instance.
 
-## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Instructions
+ 
+- use Ctl + Shift + P to bring up the command terminal for all commands.
+- start typing 'xm' to see all commands available (push, pull, setup)
+- run xMatters:Setup first.
+    - you can enter your instance shortname or the base url:
+    - base url example: https://bguerre.xmatters.com
+    - shortname example: bguerre
+- enter the user credentials used for REST API calls, first username, then password.
+- if information was entered correctly a popup message saying "test connection succesfull" will appear.
+- run command xMatters:Pull.
+    - if configured correctly a drop down picker will appear with all the instances communication plans.
+    - select the communication plan, then script you want to work on
+- Code your heart out
+- When you are done and are ready to push back to the instance use command xmatters:Push
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+WARNING: This extension is in active development and will break if you try to break it. For best results pull / push one script at a time. The extension will insert 3 lines of code at the top of your script for indentifying purposes when pushing back up to the instance. DO NOT REMOVE THESE LINES. The extension will automagically remove them when pushing the code back to the cloud.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- Only functional with single push / pull down of files. pulling multiple files and pushing randomly will probably break the app or put the wrong code in the wrong location on your instance. Recommended use case: pull single script down, work on it, push it back up, close script. 
 
 ## Release Notes
 
 Users appreciate release notes as you update your extension.
 
-### 1.0.0
+### 0.1.0 - MVP
 
-Initial release of ...
+Initial release of xmcode sync. Still in beta and ironing out all edge cases. Push, pull, and setup of a single instance are working.
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
 
 -----------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
