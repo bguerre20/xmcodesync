@@ -2,23 +2,7 @@
 
 - This is xmatters code sync! This tool is used to push and pull script to an xmatters cloud instance.
 
-## Features
-
-- Configure which xmatters instance to sync with.
-    ![](https://i.imgur.com/PoSy67z.gif)
-
-- Pull script
-    ![](https://i.imgur.com/KN6AC09.gif)
-
-- Push script
-    ![](https://i.imgur.com/elhPvlr.gif)
-
-## Requirements
-
-- An existins xmatters instance and account with sufficient privelages to do REST API calls on the instance.
-
-
-## Instructions
+# Instructions
  
 - use Ctl + Shift + P to bring up the command terminal for all commands.
 - start typing 'xm' to see all commands available (push, pull, setup)
@@ -36,11 +20,27 @@
 
 WARNING: This extension is in active development and will break if you try to break it. For best results pull / push one script at a time. The extension will insert 3 lines of code at the top of your script for indentifying purposes when pushing back up to the instance. DO NOT REMOVE THESE LINES. The extension will automagically remove them when pushing the code back to the cloud.
 
-## Known Issues
+
+# Features
+
+## Configure which xmatters instance to sync with.
+![](https://i.imgur.com/PoSy67z.gif)
+
+## Pull script
+![](https://i.imgur.com/KN6AC09.gif)
+
+## Push script
+![](https://i.imgur.com/elhPvlr.gif)
+
+# Requirements
+
+- An existins xmatters instance and account with sufficient privelages to do REST API calls on the instance.
+
+# Known Issues
 
 - Only functional with single push / pull down of files. pulling multiple files and pushing randomly will probably break the app or put the wrong code in the wrong location on your instance. Recommended use case: pull single script down, work on it, push it back up, close script. 
 
-## Release Notes
+# Release Notes
 
 Users appreciate release notes as you update your extension.
 

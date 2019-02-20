@@ -23,7 +23,10 @@ var ops = <needle.NeedleOptions>{
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-
+	if (sharedLib){};
+	if (commPlan) {};
+	if (info) {};
+	
 	let disposable2 = vscode.commands.registerCommand('xmcodesync.xmpull', () => {
 		
 		getScript().then(function(parsedScript) {
