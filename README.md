@@ -34,7 +34,7 @@ WARNING: This extension is in active development and will break if you try to br
 
 # Requirements
 
-- An existins xmatters instance and account with sufficient privelages to do REST API calls on the instance.
+- An existing xmatters instance and account with sufficient privelages to do REST API calls on the instance.
 
 # Known Issues
 
