@@ -2,6 +2,16 @@
 
 - This is xmatters code sync! This tool is used to push and pull script to an xmatters cloud instance.
 
+# Release Notes
+
+Users appreciate release notes as you update your extension.
+
+### 0.1.0 - MVP
+
+Initial release of xmcode sync. Still in beta and ironing out all edge cases. Push, pull, and setup of a single instance are working.
+
+*WARNING* - This release has an unreleased API call included in it and is not officiall supported, please use at your own risk! - *WARNING*
+
 # Instructions
  
 - use Ctl + Shift + P to bring up the command terminal for all commands.
@@ -40,13 +50,6 @@ WARNING: This extension is in active development and will break if you try to br
 
 - Only functional with single push / pull down of files. pulling multiple files and pushing randomly will probably break the app or put the wrong code in the wrong location on your instance. Recommended use case: pull single script down, work on it, push it back up, close script. 
 
-# Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 0.1.0 - MVP
-
-Initial release of xmcode sync. Still in beta and ironing out all edge cases. Push, pull, and setup of a single instance are working.
 
 
 -----------------------------------------------------------------------------------------------------------
