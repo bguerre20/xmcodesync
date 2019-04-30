@@ -137,18 +137,20 @@ export function postScript() {
 			data.id = scriptID;
 			data.script = base64data;
 		}
-
 		
-
+		data.script = base64data;
+		
+		console.log('data payload: ' + JSON.stringify(data));
 		if (pulledScriptType === "Shared Library") {
 			needle("post", 'https://bguerre.xmatters.com/api/xm/1/shared-libraries', data, ops).then(function(httpResponse) {
 				vscode.window.showInformationMessage('Code has been pushed.');
 			});
 		}
 		else if (pulledScriptType === "Integration") {
-			data.script = scriptToSend;
+			//data.script = scriptToSend;
 			needle("post", 'https://bguerre.xmatters.com/api/xm/1/plans/'+ commPlanID + '/integrations', data, ops).then(function(httpResponse) {	
 				vscode.window.showInformationMessage('Code has been pushed.');
+				//console.log(httpResponse.statusCode);
 			});
 		}
 	}
