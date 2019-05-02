@@ -139,6 +139,8 @@ export function postScript() {
 		}
 		
 		data.script = base64data;
+		//made changes
+		
 		
 		console.log('data payload: ' + JSON.stringify(data));
 		if (pulledScriptType === "Shared Library") {
