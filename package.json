@@ -3,7 +3,7 @@
 	"publisher": "BG",
 	"displayName": "xmCodeSync",
 	"description": "An extension to sync your shared libraries down to vscode and back for quick edits in a more developed IDE.",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"repository": {
 		"type": "github",
 		"url": "https://github.com/bguerre20/xmcodesync"
